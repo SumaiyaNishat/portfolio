@@ -35,11 +35,11 @@ export default function About() {
             {/* Quick stats metrics */}
             <div className="grid grid-cols-2 gap-4 py-6 border-y border-border/40 dark:border-zinc-900">
               <div>
-                <span className="text-2xl sm:text-3xl font-extrabold text-foreground dark:text-white block select-none">3+</span>
+                <span className="text-2xl sm:text-3xl font-extrabold text-foreground dark:text-white block select-none">12+</span>
                 <span className="text-[10px] sm:text-xs text-foreground/50 dark:text-zinc-500 uppercase tracking-wider font-semibold">Projects Built</span>
               </div>
               <div>
-                <span className="text-2xl sm:text-3xl font-extrabold text-foreground dark:text-white block select-none">10+</span>
+                <span className="text-2xl sm:text-3xl font-extrabold text-foreground dark:text-white block select-none">15+</span>
                 <span className="text-[10px] sm:text-xs text-foreground/50 dark:text-zinc-500 uppercase tracking-wider font-semibold">Technologies Learned</span>
               </div>
             </div>
