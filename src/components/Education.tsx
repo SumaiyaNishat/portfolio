@@ -13,22 +13,11 @@ interface TimelineItem {
 
 const EDUCATION_TIMELINE: TimelineItem[] = [
   {
-    degree: "B.Sc. in Computer Science and Engineering (CSE)",
+    degree: "Bachelor of Science (B.Sc.) in Computer Science and Engineering",
     institution: "Green University of Bangladesh",
-    period: "2020 - 2024",
-    description: "Completed undergraduate degree with a major in Software Engineering. Academic focus on web development paradigms, algorithm optimizations, relational database models, and human-computer interactions.",
-  },
-  {
-    degree: "Higher Secondary Certificate (HSC) - Science Group",
-    institution: "Dhaka City College",
-    period: "2018 - 2020",
-    description: "Focused on physics, chemistry, mathematics, and introductory computer operations, scoring high grades in computing algorithms and arithmetic math.",
-  },
-  {
-    degree: "Secondary School Certificate (SSC) - Science Group",
-    institution: "Dhaka High School",
-    period: "2016 - 2018",
-    description: "Solid foundational study in natural sciences, introductory statistics, geometry, and basic digital logic operations.",
+    period: "2022 - 2026",
+    description:
+      "Completed undergraduate studies in Computer Science and Engineering with a strong focus on software development, web technologies, databases, and problem-solving.",
   },
 ];
 
@@ -52,7 +41,7 @@ export default function Education() {
           transition={{ duration: 0.6, delay: 0.1 }}
           className="text-3xl sm:text-5xl font-bold text-foreground dark:text-white select-none"
         >
-          Education &amp; Academic Timeline
+          Education &amp; Academic Background
         </motion.h2>
       </div>
 
@@ -69,7 +58,7 @@ export default function Education() {
           >
             {/* Timeline dot */}
             <div className="absolute -left-[45px] sm:-left-[61px] top-1.5 w-6 h-6 rounded-full bg-[#7C3AED] border-4 border-background flex items-center justify-center shadow-lg shadow-purple-500/20 z-10 animate-pulse" />
-            
+
             <div className="p-8 rounded-3xl bg-card/45 dark:bg-zinc-950/40 border border-border/50 dark:border-zinc-900/60 hover:border-border/80 dark:hover:border-zinc-850 transition duration-300 relative overflow-hidden group backdrop-blur-sm shadow-md">
               {/* Background gradient line reveal */}
               <div className="absolute top-0 left-0 w-[4px] h-0 bg-[#7C3AED] group-hover:h-full transition-all duration-500" />

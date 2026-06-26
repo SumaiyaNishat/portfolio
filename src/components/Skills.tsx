@@ -22,9 +22,9 @@ const SKILL_CATEGORIES: SkillCategory[] = [
     icon: <Cpu className="w-5 h-5 text-purple-405" />,
     color: "from-purple-500 to-indigo-500",
     skills: [
-      { name: "React.js", percentage: 95 },
-      { name: "Next.js", percentage: 90 },
-      { name: "TypeScript", percentage: 88 },
+      { name: "React.js", percentage: 90 },
+      { name: "Next.js", percentage: 75 },
+      { name: "TypeScript", percentage: 70 },
       { name: "Tailwind CSS", percentage: 95 },
     ],
   },
@@ -33,10 +33,10 @@ const SKILL_CATEGORIES: SkillCategory[] = [
     icon: <Server className="w-5 h-5 text-pink-405" />,
     color: "from-pink-500 to-rose-500",
     skills: [
-      { name: "Node.js", percentage: 85 },
-      { name: "Express.js", percentage: 88 },
-      { name: "MongoDB", percentage: 85 },
-      { name: "Firebase", percentage: 80 },
+      { name: "Node.js", percentage: 80 },
+      { name: "Express.js", percentage: 80 },
+      { name: "MongoDB", percentage: 80 },
+      { name: "Firebase", percentage: 85 },
     ],
   },
   {
@@ -44,10 +44,10 @@ const SKILL_CATEGORIES: SkillCategory[] = [
     icon: <Settings className="w-5 h-5 text-amber-405" />,
     color: "from-amber-500 to-orange-500",
     skills: [
-      { name: "Git", percentage: 90 },
+      { name: "Git", percentage: 85 },
       { name: "GitHub", percentage: 92 },
-      { name: "Vercel", percentage: 88 },
-      { name: "Figma", percentage: 80 },
+      { name: "Vercel", percentage: 75 },
+      { name: "Figma", percentage: 79 },
     ],
   },
 ];

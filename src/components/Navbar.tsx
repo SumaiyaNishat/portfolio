@@ -12,7 +12,6 @@ const NAV_ITEMS = [
   { label: "Tech Stack", targetId: "tech" },
   { label: "Skills", targetId: "skills" },
   { label: "Education", targetId: "education" },
-  { label: "Experience", targetId: "experience" },
   { label: "Projects", targetId: "projects" },
   { label: "Contact", targetId: "contact" },
 ];
@@ -79,9 +78,8 @@ export default function Navbar() {
         className="fixed top-6 left-0 right-0 z-50 flex justify-center px-4"
       >
         <nav
-          className={`bg-card/85 rounded-full p-2 flex items-center justify-between pill-shadow w-full max-w-[950px] transition-all duration-500 border border-border/40 backdrop-blur-md ${
-            isScrolled ? "scale-[0.97] bg-card/95 border-border/80 shadow-2xl" : ""
-          }`}
+          className={`bg-card/85 rounded-full p-2 flex items-center justify-between pill-shadow w-full max-w-[950px] transition-all duration-500 border border-border/40 backdrop-blur-md ${isScrolled ? "scale-[0.97] bg-card/95 border-border/80 shadow-2xl" : ""
+            }`}
         >
           {/* Logo */}
           <div className="pl-4">
@@ -112,9 +110,8 @@ export default function Navbar() {
                       e.preventDefault();
                       scrollToSection(item.targetId);
                     }}
-                    className={`relative px-4 py-2 rounded-full transition-colors duration-300 block select-none ${
-                      isActive ? "text-foreground font-semibold" : "hover:text-foreground"
-                    }`}
+                    className={`relative px-4 py-2 rounded-full transition-colors duration-300 block select-none ${isActive ? "text-foreground font-semibold" : "hover:text-foreground"
+                      }`}
                   >
                     {isActive && (
                       <motion.div
@@ -204,11 +201,10 @@ export default function Navbar() {
                           e.preventDefault();
                           scrollToSection(item.targetId);
                         }}
-                        className={`text-lg py-2.5 px-4 rounded-2xl transition font-medium select-none flex items-center justify-between ${
-                          isActive
+                        className={`text-lg py-2.5 px-4 rounded-2xl transition font-medium select-none flex items-center justify-between ${isActive
                             ? "bg-foreground/10 text-foreground font-semibold"
                             : "text-foreground/75 hover:bg-foreground/5 hover:text-foreground"
-                        }`}
+                          }`}
                       >
                         <span>{item.label}</span>
                         {isActive && <span className="w-1.5 h-1.5 rounded-full bg-primary" />}

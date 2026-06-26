@@ -13,13 +13,13 @@ export default function Contact() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
+
     // Simulate form endpoint submit
     setTimeout(() => {
       setIsSubmitting(false);
       setIsSuccess(true);
       setFormData({ name: "", email: "", subject: "", message: "" });
-      
+
       // Hide feedback after duration
       setTimeout(() => setIsSuccess(false), 5000);
     }, 1500);
@@ -28,7 +28,7 @@ export default function Contact() {
   return (
     <section id="contact" className="py-24 px-6 max-w-7xl mx-auto border-t border-border/30 dark:border-zinc-900/60">
       <div className="flex flex-col lg:flex-row gap-12 lg:gap-20 items-stretch">
-        
+
         {/* Left Column: Contact details */}
         <div className="w-full lg:w-[40%] flex flex-col justify-between p-8 rounded-3xl bg-card/45 dark:bg-zinc-950/40 border border-border/50 dark:border-zinc-900/60 backdrop-blur-sm relative overflow-hidden shadow-md">
           <div className="absolute top-0 right-0 w-[150px] h-[150px] bg-purple-500/5 dark:bg-purple-600/5 rounded-full blur-[40px] -z-10" />
@@ -52,8 +52,8 @@ export default function Contact() {
                 </div>
                 <div>
                   <span className="text-[10px] text-foreground/50 dark:text-zinc-500 font-semibold block uppercase">Email</span>
-                  <a href="mailto:nisha@example.com" className="text-sm sm:text-base font-bold text-foreground dark:text-white hover:text-primary transition duration-200">
-                    nisha@example.com
+                  <a href="sumaiyanishat94@gmail.com" className="text-sm sm:text-base font-bold text-foreground dark:text-white hover:text-primary transition duration-200">
+                    sumaiyanishat94@gmail.com
                   </a>
                 </div>
               </div>
@@ -66,7 +66,7 @@ export default function Contact() {
                 <div>
                   <span className="text-[10px] text-foreground/50 dark:text-zinc-500 font-semibold block uppercase">Phone</span>
                   <a href="tel:+8801700000000" className="text-sm sm:text-base font-bold text-foreground dark:text-white hover:text-primary transition duration-200">
-                    +880 1700-000000
+                    +880 1302347906
                   </a>
                 </div>
               </div>
@@ -78,10 +78,10 @@ export default function Contact() {
                 </div>
                 <div>
                   <span className="text-[10px] text-foreground/50 dark:text-zinc-500 font-semibold block uppercase">WhatsApp</span>
-                  <a 
-                    href="https://wa.me/8801700000000" 
-                    target="_blank" 
-                    rel="noreferrer" 
+                  <a
+                    href="https://wa.me/8801700000000"
+                    target="_blank"
+                    rel="noreferrer"
                     className="text-sm sm:text-base font-bold text-foreground dark:text-white hover:text-primary transition duration-200"
                   >
                     Chat on WhatsApp
@@ -133,21 +133,7 @@ export default function Contact() {
               </div>
             </div>
 
-            {/* Subject Input */}
-            <div className="flex flex-col gap-2">
-              <label htmlFor="subject" className="text-xs font-semibold text-foreground/60 dark:text-zinc-400 uppercase tracking-wider">
-                Subject
-              </label>
-              <input
-                type="text"
-                id="subject"
-                required
-                value={formData.subject}
-                onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
-                placeholder="Project proposal"
-                className="bg-foreground/5 dark:bg-zinc-900/50 border border-border/30 dark:border-zinc-850 focus:border-primary/50 dark:focus:border-primary/40 text-foreground dark:text-white rounded-xl px-4 py-3 text-sm sm:text-base focus:outline-none transition duration-300 shadow-sm"
-              />
-            </div>
+
 
             {/* Message Area */}
             <div className="flex flex-col gap-2">

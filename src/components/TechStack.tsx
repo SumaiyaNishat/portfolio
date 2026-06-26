@@ -16,13 +16,13 @@ const TECH_CATEGORIES: TechCategory[] = [
     title: "Languages",
     icon: <Code className="w-5 h-5" />,
     color: "from-blue-500 to-cyan-500",
-    items: ["JavaScript (ES6+)", "TypeScript", "HTML5 & CSS3", "Python", "SQL (Postgres)", "GraphQL"],
+    items: ["JavaScript (ES6+)", "TypeScript", "HTML5 & CSS3", "Python", "SQL (Postgres)"],
   },
   {
     title: "Frameworks & Runtimes",
     icon: <Layout className="w-5 h-5" />,
     color: "from-purple-500 to-indigo-500",
-    items: ["React 19", "Next.js 16 (App Router)", "Node.js", "Express.js", "React Native", "Tailwind CSS v4"],
+    items: ["React.js", "Next.js 16 (App Router)", "Node.js", "Express.js", "Tailwind CSS v4"],
   },
   {
     title: "State & Animation",
@@ -34,7 +34,7 @@ const TECH_CATEGORIES: TechCategory[] = [
     title: "Tools & Operations",
     icon: <Settings className="w-5 h-5" />,
     color: "from-amber-500 to-orange-500",
-    items: ["Git & GitHub", "Figma", "Docker", "Vercel / AWS", "PostgreSQL / MongoDB", "npm / pnpm / bun"],
+    items: ["Git & GitHub", "Figma", "Docker", "Vercel", "PostgreSQL", "MongoDB"],
   },
 ];
 
@@ -75,7 +75,7 @@ export default function TechStack() {
           >
             {/* Background Glow */}
             <div className={`absolute top-0 right-0 w-[150px] h-[150px] bg-gradient-to-br ${category.color} opacity-0 group-hover:opacity-[0.03] rounded-full blur-[40px] -z-10 transition duration-300`} />
-            
+
             <div className="flex items-center gap-3 mb-6">
               <div className={`p-3 rounded-2xl bg-gradient-to-tr ${category.color} text-white shadow-lg shadow-purple-500/5`}>
                 {category.icon}

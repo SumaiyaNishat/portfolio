@@ -2,7 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { User, Sparkles, Heart, BookOpen, Target } from "lucide-react";
+import { User, Sparkles, Heart, Coffee, BookOpen, Target } from "lucide-react";
 
 export default function About() {
   const hobbies = [
@@ -29,18 +29,18 @@ export default function About() {
 
             <h3 className="text-xl font-bold text-foreground dark:text-white mb-3 select-none">Sumaiya Khan Nishat</h3>
             <p className="text-foreground/75 dark:text-zinc-400 text-sm leading-relaxed mb-6 select-none">
-              MERN Stack Engineer specializing in reactive user experiences, modular data APIs, and fast loading parameters.
+              Passionate MERN Stack Developer focused on building modern, responsive, and user-friendly web applications using React, Next.js, Node.js, MongoDB, and Firebase.
             </p>
 
             {/* Quick stats metrics */}
             <div className="grid grid-cols-2 gap-4 py-6 border-y border-border/40 dark:border-zinc-900">
               <div>
                 <span className="text-2xl sm:text-3xl font-extrabold text-foreground dark:text-white block select-none">3+</span>
-                <span className="text-[10px] sm:text-xs text-foreground/50 dark:text-zinc-500 uppercase tracking-wider font-semibold">Years Exp</span>
+                <span className="text-[10px] sm:text-xs text-foreground/50 dark:text-zinc-500 uppercase tracking-wider font-semibold">Projects Built</span>
               </div>
               <div>
-                <span className="text-2xl sm:text-3xl font-extrabold text-foreground dark:text-white block select-none">20+</span>
-                <span className="text-[10px] sm:text-xs text-foreground/50 dark:text-zinc-500 uppercase tracking-wider font-semibold">Apps Deployed</span>
+                <span className="text-2xl sm:text-3xl font-extrabold text-foreground dark:text-white block select-none">10+</span>
+                <span className="text-[10px] sm:text-xs text-foreground/50 dark:text-zinc-500 uppercase tracking-wider font-semibold">Technologies Learned</span>
               </div>
             </div>
           </div>
@@ -77,7 +77,7 @@ export default function About() {
             <Sparkles className="w-4 h-4 text-purple-400" />
             <span>Biography &amp; Journey</span>
           </motion.div>
-          
+
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -98,15 +98,19 @@ export default function About() {
             <p>
               My journey into web development started with a simple curiosity about how websites are created and how they work behind the scenes. That curiosity inspired me to explore the fundamentals of web development and gradually build my skills step by step.
             </p>
+
             <p>
               I began with HTML and CSS, learning how to structure and design web pages. As my interest grew, I explored JavaScript to add interactivity and create more engaging user experiences. Later, I learned React, Next.js, and Tailwind CSS to build modern, responsive, and scalable web applications.
             </p>
+
             <p>
               Wanting to understand how complete web applications work, I expanded my knowledge into backend development with Node.js, Express.js, and MongoDB. I also gained experience with Firebase Authentication and secure user management, which helped me develop a strong foundation in full-stack development.
             </p>
+
             <p>
               I enjoy building practical projects, solving real-world problems, and continuously learning new technologies. Outside of programming, I enjoy creating digital content, exploring new ideas, and working on creative projects. My goal is to keep improving my skills and build impactful web applications that provide real value to users.
             </p>
+
           </motion.div>
         </div>
       </div>
