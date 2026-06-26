@@ -1,7 +1,6 @@
 "use client";
 
 import React from "react";
-import { Button } from "@heroui/react";
 import { motion } from "framer-motion";
 import { Download, FileText, ArrowUpRight, Github, BookOpen } from "lucide-react";
 
@@ -108,10 +107,9 @@ export default function Resources() {
 
             {/* Action */}
             <div className="pt-4 border-t border-zinc-900/60">
-              <Button
-                as="a"
+              <a
                 href={resource.downloadUrl}
-                className="w-full bg-zinc-900 border border-zinc-800 hover:bg-zinc-850 text-zinc-350 hover:text-white font-medium py-5 rounded-xl text-sm flex items-center justify-center gap-2 transition duration-205 group-hover:border-zinc-700"
+                className="w-full bg-zinc-900 border border-zinc-800 hover:bg-zinc-850 text-zinc-350 hover:text-white font-medium py-3 rounded-xl text-sm flex items-center justify-center gap-2 transition duration-205 group-hover:border-zinc-700 text-center"
               >
                 <span>Get Resource</span>
                 {resource.type.includes("Source") ? (
@@ -119,7 +117,7 @@ export default function Resources() {
                 ) : (
                   <Download className="w-4 h-4" />
                 )}
-              </Button>
+              </a>
             </div>
           </motion.div>
         ))}

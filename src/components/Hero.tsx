@@ -58,7 +58,7 @@ export default function Hero() {
             x: mousePosition.x * 1.5,
             y: mousePosition.y * 1.5,
           }}
-          transition={{ type: "smooth", stiffness: 100, damping: 20 }}
+          transition={{ type: "spring", stiffness: 100, damping: 20 }}
           className="absolute -top-[20%] -left-[10%] w-[500px] h-[500px] rounded-full bg-primary/10 dark:bg-primary/5 blur-[120px]"
         />
         <motion.div
@@ -66,7 +66,7 @@ export default function Hero() {
             x: -mousePosition.x * 1.5,
             y: -mousePosition.y * 1.5,
           }}
-          transition={{ type: "smooth", stiffness: 100, damping: 20 }}
+          transition={{ type: "spring", stiffness: 100, damping: 20 }}
           className="absolute -bottom-[20%] -right-[10%] w-[600px] h-[600px] rounded-full bg-secondary/15 dark:bg-secondary/5 blur-[140px]"
         />
       </div>
@@ -122,15 +122,14 @@ export default function Hero() {
 
           {/* Buttons: Resume & Contact */}
           <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4 mb-8">
-            <Button
-              as="a"
+            <a
               href="/resume.pdf"
-              download="Sumaiya_Khan_Nisha_Resume.pdf"
-              className="bg-primary text-background dark:bg-primary dark:text-background font-bold px-8 py-6 rounded-full hover:opacity-90 text-sm sm:text-base flex items-center gap-2.5 transition duration-300 shadow-lg shadow-primary/20 cursor-pointer"
+              download="Sumaiya_Khan_Nishat_Resume.pdf"
+              className="bg-primary text-background dark:bg-primary dark:text-background font-bold px-8 py-3.5 rounded-full hover:opacity-90 text-sm sm:text-base flex items-center gap-2.5 transition duration-300 shadow-lg shadow-primary/20 cursor-pointer text-center"
             >
               <Download className="w-4.5 h-4.5" />
               Download Resume
-            </Button>
+            </a>
             <Button
               onPress={() => scrollToSection("projects")}
               className="bg-transparent border-2 border-border/80 hover:bg-foreground/5 text-foreground font-semibold px-8 py-6 rounded-full text-sm sm:text-base flex items-center gap-2 transition duration-300 cursor-pointer"

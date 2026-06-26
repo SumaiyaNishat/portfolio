@@ -20,7 +20,7 @@ export default function Playground() {
   const triggerAnimation = contextSafe(() => {
     if (!gridRef.current) return;
     const boxes = gridRef.current.children;
-    
+
     // Animate grid elements in a yoyo stagger
     gsap.killTweensOf(boxes);
     gsap.fromTo(
@@ -74,16 +74,18 @@ export default function Playground() {
               <Terminal className="w-5 h-5 text-purple-450" />
               <h3 className="text-xl font-bold text-white select-none">GSAP Engine Controller</h3>
             </div>
-            
+
             <p className="text-zinc-400 text-sm mb-8 leading-relaxed select-none">
               Adjust parameters below to trigger a coordinate-based stagger animation on the canvas grid when hovered or clicked.
             </p>
 
-            <div className="space-y-6">
-              {/* Stagger Slider */}
+            <div className="space-y-2">
+              <p className="text-sm font-semibold text-zinc-400">
+                Stagger Speed
+              </p>
+
               <Slider
-                label="Stagger Speed"
-                size="sm"
+
                 step={0.01}
                 maxValue={0.15}
                 minValue={0.01}
@@ -91,45 +93,6 @@ export default function Playground() {
                 onChange={(v) => setStagger(v as number)}
                 className="max-w-md text-zinc-350"
               />
-
-              {/* Rotation Slider */}
-              <Slider
-                label="Rotation Angle"
-                size="sm"
-                step={45}
-                maxValue={360}
-                minValue={0}
-                value={rotation}
-                onChange={(v) => setRotation(v as number)}
-                className="max-w-md text-zinc-350"
-              />
-
-              {/* Scale Slider */}
-              <Slider
-                label="Scale Compression"
-                size="sm"
-                step={0.1}
-                maxValue={1.5}
-                minValue={0.2}
-                value={scale}
-                onChange={(v) => setScale(v as number)}
-                className="max-w-md text-zinc-350"
-              />
-
-              {/* Ease Function Select */}
-              <div className="flex flex-col gap-1.5">
-                <label className="text-sm font-semibold text-zinc-400">Easing Curve</label>
-                <select
-                  value={ease}
-                  onChange={(e) => setEase(e.target.value)}
-                  className="bg-zinc-900 border border-zinc-800 text-zinc-300 rounded-xl px-3 py-2 text-sm focus:outline-none focus:border-zinc-700 transition"
-                >
-                  <option value="power3.out">Power 3 Out (Fluid)</option>
-                  <option value="back.out(2)">Back Out (Overshoot)</option>
-                  <option value="bounce.out">Bounce Out (Elastic)</option>
-                  <option value="circ.out">Circular Out (Accelerating)</option>
-                </select>
-              </div>
             </div>
           </div>
 
