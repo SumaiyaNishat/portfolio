@@ -14,12 +14,12 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Sumaiya Khan Nishat | Modern Developer Portfolio",
-  description: "A premium modern developer portfolio and showcase built using Next.js, HeroUI, GSAP, and Framer Motion by Sumaiya Khan Nishat, MERN Stack Developer & Next.js Architect.",
+  title: "Sumaiya Khan Nishat | Portfolio",
+  description: "Portfolio and showcase built using Next.js, HeroUI, GSAP, and Framer Motion by Sumaiya Khan Nishat, MERN Stack Developer & Next.js Architect.",
   keywords: ["portfolio", "nextjs", "heroui", "gsap", "framer-motion", "lenis", "smooth scroll", "developer", "Sumaiya Khan Nishat", "MERN Stack"],
   openGraph: {
-    title: "Sumaiya Khan Nishat | Modern Developer Portfolio",
-    description: "Premium modern developer portfolio with fluid animations and responsive glassmorphism.",
+    title: "Sumaiya Khan Nishat | Portfolio",
+    description: "Portfolio with fluid animations and responsive glassmorphism.",
     type: "website",
   },
 };
