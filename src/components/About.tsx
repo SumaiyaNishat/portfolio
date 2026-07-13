@@ -13,7 +13,7 @@ export default function About() {
   ];
 
   return (
-    <section id="about" className="py-24 px-6 max-w-7xl mx-auto border-t border-border/30 dark:border-zinc-900/60">
+    <section id="about" className="scroll-mt-24 py-24 px-6 max-w-7xl mx-auto border-t border-border/30 dark:border-zinc-900/60">
       <div className="flex flex-col lg:flex-row gap-12 lg:gap-20 items-stretch">
 
         {/* Left Column: Visual avatar card & Hobbies */}
