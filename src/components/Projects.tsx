@@ -28,7 +28,7 @@ export default function Projects() {
   });
 
   return (
-    <section id="projects" className="py-24 px-6 max-w-7xl mx-auto border-t border-border/30 dark:border-zinc-900/60 transition-colors duration-500">
+    <section id="projects" className="scroll-mt-24 py-24 px-6 max-w-7xl mx-auto border-t border-border/30 dark:border-zinc-900/60 transition-colors duration-500">
       
       {/* Title & Filter Block */}
       <div className="flex flex-col lg:flex-row items-center lg:items-end justify-between gap-8 mb-16">
