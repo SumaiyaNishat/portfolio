@@ -9,8 +9,7 @@ import { Menu, X, Sun, Moon, Mail } from "lucide-react";
 const NAV_ITEMS = [
   { label: "Home", targetId: "hero" },
   { label: "About", targetId: "about" },
-  { label: "Tech Stack", targetId: "tech" },
-  { label: "Skills", targetId: "skills" },
+  { label: "Tech Stack", targetId: "skills" },
   { label: "Education", targetId: "education" },
   { label: "Projects", targetId: "projects" },
   { label: "Contact", targetId: "contact" },
@@ -45,7 +44,7 @@ export default function Navbar() {
 
     const observer = new IntersectionObserver(handleIntersection, observerOptions);
 
-    const sections = ["hero", "about", "tech", "skills", "education", "experience", "projects", "contact"];
+    const sections = ["hero", "about", "skills", "education", "experience", "projects", "contact"];
     sections.forEach((id) => {
       const el = document.getElementById(id);
       if (el) observer.observe(el);

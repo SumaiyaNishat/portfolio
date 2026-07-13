@@ -124,11 +124,12 @@ export default function Hero() {
           <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4 mb-8">
             <a
               href="/resume.pdf"
-              download="Sumaiya_Khan_Nishat_Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-primary text-background dark:bg-primary dark:text-background font-bold px-8 py-3.5 rounded-full hover:opacity-90 text-sm sm:text-base flex items-center gap-2.5 transition duration-300 shadow-lg shadow-primary/20 cursor-pointer text-center"
             >
               <Download className="w-4.5 h-4.5" />
-              Download Resume
+              View Resume
             </a>
             <Button
               onPress={() => scrollToSection("projects")}

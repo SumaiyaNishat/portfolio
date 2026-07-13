@@ -1,7 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
-import TechStack from "@/components/TechStack";
-import Skills from "@/components/Skills";
+import Skills from "@/components/Skills/Skills";
 import Education from "@/components/Education";
 import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
@@ -15,7 +14,6 @@ export default function Home() {
       <main className="min-h-screen">
         <Hero />
         <About />
-        <TechStack />
         <Skills />
 
         <Education />
