@@ -23,7 +23,7 @@ const EDUCATION_TIMELINE: TimelineItem[] = [
 
 export default function Education() {
   return (
-    <section id="education" className="py-24 px-6 max-w-7xl mx-auto border-t border-border/30 dark:border-zinc-900/60">
+    <section id="education" className="scroll-mt-24 py-24 px-6 max-w-7xl mx-auto border-t border-border/30 dark:border-zinc-900/60">
       <div className="mb-16 text-center sm:text-left">
         <motion.span
           initial={{ opacity: 0, y: 10 }}

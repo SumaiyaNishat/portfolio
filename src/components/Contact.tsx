@@ -26,7 +26,7 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="py-24 px-6 max-w-7xl mx-auto border-t border-border/30 dark:border-zinc-900/60">
+    <section id="contact" className="scroll-mt-24 py-24 px-6 max-w-7xl mx-auto border-t border-border/30 dark:border-zinc-900/60">
       <div className="flex flex-col lg:flex-row gap-12 lg:gap-20 items-stretch">
 
         {/* Left Column: Contact details */}
